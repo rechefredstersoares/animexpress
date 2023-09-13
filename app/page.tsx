@@ -3,7 +3,6 @@ import HeroBanner from "@/components/HeroBanner";
 import AiringFeat from "@/components/featured/AiringFeat";
 import TopFeat from "@/components/featured/TopFeat";
 import UpcomingFeat from "@/components/featured/UpcomingFeat";
-import GenreFeat from "@/components/genreFeat/GenreFeat";
 import Search from "@/components/search/Search";
 import { FaGripLinesVertical } from "react-icons/fa";
 

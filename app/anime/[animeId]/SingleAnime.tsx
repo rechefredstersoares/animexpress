@@ -124,7 +124,9 @@ const SingleAnime: FC<Props> = ({ id, name, anime }) => {
                     <div className="mt-6 flex flex-row items-center gap-8">
                         <div className="text-sm text-sky-900">
                             {anime?.studios?.map((studio: any) => (
-                                <Link href={studio.url}>{studio?.name},</Link>
+                                <Link href={studio.url} key={studio?.mal_id}>
+                                    {studio?.name},
+                                </Link>
                             ))}
                         </div>
 
