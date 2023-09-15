@@ -6,11 +6,12 @@ import ProfileAvatar from "./ProfileAvatar";
 import clsx from "clsx";
 import { navLinkList } from "@/constants";
 import Headroom from "react-headroom";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
     return (
         <Headroom>
-            <header className="bg-white-1 flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12 py-4 shadow-xl">
+            <header className="relative bg-white-1 flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-12 py-4 shadow-xl">
                 <Logo />
                 <nav>
                     <ul className="hidden md:flex flex-row gap-8 lg:gap-10">
@@ -28,8 +29,10 @@ const Navbar = () => {
                         ))}
                     </ul>
                 </nav>
-                {/* TODO: mobile navigation */}
-                <ProfileAvatar />
+                <MobileNav />
+                <div className="hidden lg:flex items-center justify-center">
+                    <ProfileAvatar />
+                </div>
             </header>
         </Headroom>
     );

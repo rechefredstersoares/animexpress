@@ -62,7 +62,6 @@ const AnimeCharacters = ({ id }: { id: string }) => {
                                 {char.character.name}
                             </span>
                         </Link>
-                        <span className="mt-1">{char.role}</span>
                     </div>
                 ))}
 

@@ -115,7 +115,7 @@ const SingleAnime: FC<Props> = ({ id, name, anime }) => {
                         <div className="flex flex-row items-center justify-center">
                             <BsFire color="#0cbc4d" size={28} />
                             <span className="text-lg font-bold text-black-1 ml-1">
-                                {anime?.rank}
+                                {anime?.popularity}
                             </span>
                         </div>
                     </div>
